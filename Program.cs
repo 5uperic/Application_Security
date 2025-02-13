@@ -69,11 +69,11 @@ app.UseRouting();
 // Enable session middleware
 app.UseSession();
 
-// Add custom middleware to validate sessions
-app.UseMiddleware<ValidateSessionMiddleware>();
-
 app.UseAuthentication();
 app.UseAuthorization();
+
+// Add custom middleware to validate sessions
+app.UseMiddleware<ValidateSessionMiddleware>();
 
 app.MapRazorPages();
 

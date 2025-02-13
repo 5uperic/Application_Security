@@ -304,3 +304,4 @@ C:\Users\Andric\Downloads\AS_Assignment\WebApplication1\bin\Debug\net8.0\Microso
 C:\Users\Andric\Downloads\AS_Assignment\WebApplication1\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\Andric\Downloads\AS_Assignment\WebApplication1\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Andric\Downloads\AS_Assignment\WebApplication1\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Andric\Downloads\AS_Assignment\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json

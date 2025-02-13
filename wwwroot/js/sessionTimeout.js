@@ -7,7 +7,7 @@ function resetTimer() {
             .then(() => {
                 window.location.href = "/Login"; // Redirect to login page after logout
             });
-    }, 30 * 60 * 1000);
+    }, 30 * 60 * 1000); // 1 minute
 }
 
 

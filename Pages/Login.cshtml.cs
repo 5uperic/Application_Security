@@ -252,6 +252,7 @@ namespace WebApplication1.Pages
         public async Task<IActionResult> OnPostLogoutAsync()
         {
             await signInManager.SignOutAsync();
+            HttpContext.Session.Clear();
             Console.WriteLine("User logged out.");
             return RedirectToPage("Login");
         }
@@ -326,6 +327,7 @@ namespace WebApplication1.Pages
 
                     // Store the new session ID in the current session
                     HttpContext.Session.SetString("SessionId", user.SessionId);
+                    Console.WriteLine($"New Session ID: {user.SessionId}");
 
                     if (user.PasswordChangedDate.HasValue && DateTime.UtcNow - user.PasswordChangedDate.Value > TimeSpan.FromDays(90))
                     {

@@ -22,20 +22,20 @@
 - [ yes ] Implement proper login functionality
 - [ yes ] Implement rate limiting (e.g., account lockout after 3 failed login attempts)
 - [ yes ] Perform proper and safe logout (clear session and redirect to login page)
-- [ ] Implement audit logging (save user activities in the database)
+- [ yes ] Implement audit logging (save user activities in the database)
 - [ yes ] Redirect to homepage after successful login, displaying user info
 
 ## Anti-Bot Protection
 - [ yes ] Implement Google reCAPTCHA v3 service
 
 ## Input Validation and Sanitization
-- [ ] Prevent injection attacks (e.g., SQL injection)
-- [ ] Implement Cross-Site Request Forgery (CSRF) protection
-- [ ] Prevent Cross-Site Scripting (XSS) attacks
-- [ ] Perform proper input sanitization, validation, and verification for all user inputs
-- [ ] Implement both client-side and server-side input validation
-- [ ] Display error or warning messages for improper input
-- [ ] Perform proper encoding before saving data into the database
+- [ yes ] Prevent injection attacks (e.g., SQL injection)
+- [ yes ] Implement Cross-Site Request Forgery (CSRF) protection
+- [ yes ] Prevent Cross-Site Scripting (XSS) attacks
+- [ yes ] Perform proper input sanitization, validation, and verification for all user inputs
+- [ yes ] Implement both client-side and server-side input validation
+- [ yes ] Display error or warning messages for improper input
+- [ yes ] Perform proper encoding before saving data into the database
 
 ## Error Handling
 - [ ] Implement graceful error handling on all pages

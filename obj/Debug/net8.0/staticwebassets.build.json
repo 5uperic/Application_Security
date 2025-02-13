@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AK2N9LVkeGDsrk2nok1FdjXQgRIxg5EEzyuGKBKlY0U=",
+  "Hash": "en57fJGip1lrkqDj0C9dNdJ7bDdbBAWZG/E4+ZBhO1k=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -1404,6 +1404,25 @@
       "OriginalItemSpec": "wwwroot\\photos\\4162847e-c009-4324-a761-6abfdb10d4b3.jpg"
     },
     {
+      "Identity": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\52a93824-c8ec-45ff-a2e0-42be5d5d5c90.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "photos/52a93824-c8ec-45ff-a2e0-42be5d5d5c90.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\52a93824-c8ec-45ff-a2e0-42be5d5d5c90.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\5b7c6284-44d9-4ec6-8898-80c9969c9889.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
@@ -1459,6 +1478,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photos\\7ad1922d-fb06-4d93-829d-0958ddd3b961.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\7de8dfe6-ab2e-4905-8f41-4251cb96b507.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "photos/7de8dfe6-ab2e-4905-8f41-4251cb96b507.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\7de8dfe6-ab2e-4905-8f41-4251cb96b507.jpg"
     },
     {
       "Identity": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\88946dd5-cbad-4302-9879-bec2058783f5.jpg",
@@ -1630,6 +1668,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photos\\b2bc839f-b61b-4f32-9a71-5f7ee7df052b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\b61543d2-fb80-4d13-b14d-62f62935037a.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "photos/b61543d2-fb80-4d13-b14d-62f62935037a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\b61543d2-fb80-4d13-b14d-62f62935037a.jpg"
     },
     {
       "Identity": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\c12aae33-65a8-4f46-9c4c-d16d487f2a3c.jpg",

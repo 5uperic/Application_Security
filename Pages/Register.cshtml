@@ -3,59 +3,78 @@
 @{
 }
 
-<!-- Add this in the head section or before the closing body tag -->
 @section Head {
 	<script src="https://www.google.com/recaptcha/api.js?render=@Model.RecaptchaSiteKey"></script>
 }
 
 <div class="container mt-5">
-
 	<div class="row justify-content-center align-items-center">
-
 		<div class="col-sm-12 col-md-12 col-lg-4">
-			<h1 class="mb-3">Register </h1>
+			<h1 class="mb-3">Register</h1>
 
 			<form method="post" enctype="multipart/form-data" id="registerForm">
+				<!-- Validation Summary -->
 				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
+				<!-- Full Name -->
 				<div class="mb-3">
 					<label class="form-label" asp-for="RModel.FullName">Full Name</label>
-					<input type="text" asp-for="RModel.FullName" class="form-control" required />
+					<input type="text" asp-for="RModel.FullName" class="form-control" required pattern="^[A-Za-z\s]+$"
+						title="Only letters and spaces are allowed." />
 					<span asp-validation-for="RModel.FullName" class="text-danger"></span>
 				</div>
 
-
+				<!-- Email -->
 				<div class="mb-3">
 					<label class="form-label" asp-for="RModel.Email">Email Address</label>
-					<input type="Text" asp-for="RModel.Email" class="form-control" />
-					<span asp-validaton-for="RModel.Email" class="text-danger"></span>
+					<input type="email" asp-for="RModel.Email" class="form-control" required />
+					<span asp-validation-for="RModel.Email" class="text-danger"></span>
 				</div>
 
+				<!-- Password -->
 				<div class="mb-3">
 					<label class="form-label" asp-for="RModel.Password">Password</label>
-					<input type="password" asp-for="RModel.Password" class="form-control" minlength="12" required />
+					<div class="input-group">
+						<input type="password" asp-for="RModel.Password" id="RModel_Password" class="form-control"
+							minlength="12" required />
+						<button type="button" class="btn btn-outline-secondary" id="togglePassword">
+							<i class="fas fa-eye-slash"></i> <!-- Closed eye icon by default -->
+						</button>
+					</div>
 					<span asp-validation-for="RModel.Password" class="text-danger"></span>
+					<div id="password-strength-feedback" class="mt-2"></div>
 				</div>
 
-
+				<!-- Confirm Password -->
 				<div class="mb-3">
 					<label class="form-label" asp-for="RModel.ConfirmPassword">Confirm Password</label>
-					<input type="Text" asp-for="RModel.ConfirmPassword" class="form-control" />
-					<span asp-validaton-for="RModel.ConfirmPassword" class="text-danger"></span>
+					<div class="input-group">
+						<input type="password" asp-for="RModel.ConfirmPassword" id="RModel_ConfirmPassword"
+							class="form-control" required />
+						<button type="button" class="btn btn-outline-secondary" id="toggleConfirmPassword">
+							<i class="fas fa-eye-slash"></i> <!-- Closed eye icon by default -->
+						</button>
+					</div>
+					<span asp-validation-for="RModel.ConfirmPassword" class="text-danger"></span>
 				</div>
 
+
+				<!-- Phone Number -->
 				<div class="mb-3">
 					<label class="form-label" asp-for="RModel.PhoneNumber">Phone Number</label>
-					<input type="tel" asp-for="RModel.PhoneNumber" class="form-control" required />
+					<input type="tel" asp-for="RModel.PhoneNumber" class="form-control" required pattern="\d{8}"
+						title="Please enter exactly 8 digits." />
 					<span asp-validation-for="RModel.PhoneNumber" class="text-danger"></span>
 				</div>
 
+				<!-- Credit Card Number -->
 				<div class="mb-3">
 					<label class="form-label" asp-for="RModel.CreditCardNumber">Credit Card Number</label>
 					<input type="text" asp-for="RModel.CreditCardNumber" class="form-control" required />
 					<span asp-validation-for="RModel.CreditCardNumber" class="text-danger"></span>
 				</div>
 
+				<!-- Gender -->
 				<div class="mb-3">
 					<label class="form-label" asp-for="RModel.Gender">Gender</label>
 					<select asp-for="RModel.Gender" class="form-control" required>
@@ -66,27 +85,32 @@
 					<span asp-validation-for="RModel.Gender" class="text-danger"></span>
 				</div>
 
+				<!-- Delivery Address -->
 				<div class="mb-3">
 					<label class="form-label" asp-for="RModel.DeliveryAddress">Delivery Address</label>
-					<input type="text" asp-for="RModel.DeliveryAddress" class="form-control" required />
+					<input type="text" asp-for="RModel.DeliveryAddress" class="form-control" required
+						pattern="^[A-Za-z0-9\s,.-]+$" title="Special characters are not allowed." />
 					<span asp-validation-for="RModel.DeliveryAddress" class="text-danger"></span>
 				</div>
 
+				<!-- Profile Picture -->
 				<div class="mb-3">
-					<label class="form-label" asp-for="RModel.Photo">Upload Photo (JPG only)</label>
+					<label class="form-label" asp-for="RModel.Photo">Profile Picture (JPG only)</label>
 					<input type="file" asp-for="RModel.Photo" accept=".jpg" class="form-control" required />
 					<span asp-validation-for="RModel.Photo" class="text-danger"></span>
 				</div>
 
+				<!-- About Me -->
 				<div class="mb-3">
 					<label class="form-label" asp-for="RModel.AboutMe">About Me</label>
 					<textarea asp-for="RModel.AboutMe" class="form-control" required></textarea>
 					<span asp-validation-for="RModel.AboutMe" class="text-danger"></span>
 				</div>
 
-				<!-- Add a hidden input for the reCAPTCHA token -->
- type="hidden" name="g-recaptcha-response" id="g-recaptcha-response" />				<input
+				<!-- Hidden reCAPTCHA Token -->
+				<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response" />
 
+				<!-- Submit Button -->
 				<div class="mb-3">
 					<button type="submit" id="registerButton" class="btn btn-primary">Register</button>
 				</div>
@@ -117,74 +141,173 @@
 </div>
 
 @section Scripts {
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            console.log('Page loaded. reCAPTCHA site key: @Model.RecaptchaSiteKey');
-            
-            // Show confirmation modal if needed
-            if (@Model.ShowConfirmationModal.ToString().ToLower()) {
-                $('#confirmationModal').modal('show');
-            }
-            
-            // Add loading indicator
-            function setButtonLoading(loading) {
-                const button = document.getElementById('registerButton');
-                if (loading) {
-                    button.disabled = true;
-                    button.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...';
-                } else {
-                    button.disabled = false;
-                    button.innerHTML = 'Register';
-                }
-            }
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+	<!-- Include validation scripts -->
+	<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+	<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			// Function to toggle password visibility
+			function togglePasswordVisibility(inputId, buttonId) {
+				const input = document.getElementById(inputId);
+				const button = document.getElementById(buttonId);
+				const icon = button.querySelector('i');
 
-            // Add error message display
-            function showError(message) {
-                const errorDiv = document.createElement('div');
-                errorDiv.className = 'alert alert-danger mt-3';
-                errorDiv.role = 'alert';
-                errorDiv.textContent = message;
-                $('#registerForm').prepend(errorDiv);
-                setTimeout(() => errorDiv.remove(), 5000); // Remove after 5 seconds
-            }
-            
-            $('#registerForm').on('submit', function(e) {
-                e.preventDefault();
-                console.log('Form submission started');
-                
-                // Clear any existing error messages
-                $('.alert-danger').remove();
-                
-                // Set button to loading state
-                setButtonLoading(true);
-                
-                console.log('Executing reCAPTCHA verification...');
-                
-                try {
-                    grecaptcha.ready(function() {
-                        console.log('reCAPTCHA is ready');
-                        grecaptcha.execute('@Model.RecaptchaSiteKey', {action: 'register'})
-                            .then(function(token) {
-                                console.log('Received reCAPTCHA token');
-                                document.getElementById('g-recaptcha-response').value = token;
-                                console.log('Token set in form');
-                        
-                                $('#registerForm')[0].submit();
-                            })
-                            .catch(function(error) {
-                                console.error('reCAPTCHA error: ' + error);
-                                setButtonLoading(false);
-                                showError('reCAPTCHA verification failed. Please try again.');
-                            });
-                    });
-                } catch (error) {
-                    console.error('Error in reCAPTCHA execution: ' + error);
-                    setButtonLoading(false);
-                    showError('An error occurred during form submission. Please try again.');
-                }
-            });
-        });
-    </script>
+				if (input.type === "password") {
+					input.type = "text";
+					icon.classList.remove('fa-eye-slash');
+					icon.classList.add('fa-eye');
+				} else {
+					input.type = "password";
+					icon.classList.remove('fa-eye');
+					icon.classList.add('fa-eye-slash');
+				}
+			}
+
+			// Toggle Password Visibility
+			document.getElementById('togglePassword').addEventListener('click', function () {
+				togglePasswordVisibility('RModel_Password', 'togglePassword');
+			});
+
+			// Toggle Confirm Password Visibility
+			document.getElementById('toggleConfirmPassword').addEventListener('click', function () {
+				togglePasswordVisibility('RModel_ConfirmPassword', 'toggleConfirmPassword');
+			});
+			console.log('Page loaded. reCAPTCHA site key: @Model.RecaptchaSiteKey');
+
+			// Show confirmation modal if needed
+			if (@Model.ShowConfirmationModal.ToString().ToLower()) {
+				$('#confirmationModal').modal('show');
+			}
+
+			// Show Password Toggle
+			$('#showPasswordCheckbox').on('change', function () {
+				const passwordField = $('#RModel_Password');
+				const confirmPasswordField = $('#RModel_ConfirmPassword');
+
+				if (this.checked) {
+					passwordField.attr('type', 'text');
+					confirmPasswordField.attr('type', 'text');
+				} else {
+					passwordField.attr('type', 'password');
+					confirmPasswordField.attr('type', 'password');
+				}
+			});
+
+			// Password strength feedback
+			function checkPasswordStrength(password) {
+				console.log('Checking password strength:', password);
+				const feedback = document.getElementById('password-strength-feedback');
+				if (!feedback) {
+					console.error('Password strength feedback element not found!');
+					return;
+				}
+
+				let strength = 0;
+				if (password.length >= 12) strength++;
+				if (password.match(/[A-Z]/)) strength++;
+				if (password.match(/[a-z]/)) strength++;
+				if (password.match(/[0-9]/)) strength++;
+				if (password.match(/[^A-Za-z0-9]/)) strength++;
+
+				let message = '';
+				let color = 'red';
+
+				switch (strength) {
+					case 0:
+					case 1:
+						message = 'Very Weak';
+						break;
+					case 2:
+						message = 'Weak';
+						break;
+					case 3:
+						message = 'Moderate';
+						color = 'orange';
+						break;
+					case 4:
+						message = 'Strong';
+						color = 'green';
+						break;
+					case 5:
+						message = 'Very Strong';
+						color = 'darkgreen';
+						break;
+				}
+
+				feedback.textContent = `Password Strength: ${message}`;
+				feedback.style.color = color;
+			}
+
+			// Attach the password strength checker to the input field
+			document.getElementById('RModel_Password').addEventListener('input', function () {
+				checkPasswordStrength(this.value);
+			});
+
+			$('#registerForm').on('submit', function (e) {
+				if (!$(this).valid()) {
+					e.preventDefault(); // Prevent form submission if validation fails
+					return;
+				}
+
+				// Proceed with custom form submission logic
+				e.preventDefault();
+				console.log('Form submission started');
+
+				// Clear any existing error messages
+				$('.alert-danger').remove();
+
+				// Set button to loading state
+				setButtonLoading(true);
+
+				console.log('Executing reCAPTCHA verification...');
+
+				try {
+					grecaptcha.ready(function () {
+						console.log('reCAPTCHA is ready');
+						grecaptcha.execute('@Model.RecaptchaSiteKey', { action: 'register' })
+							.then(function (token) {
+								console.log('Received reCAPTCHA token');
+								document.getElementById('g-recaptcha-response').value = token;
+								console.log('Token set in form');
+
+								$('#registerForm')[0].submit();
+							})
+							.catch(function (error) {
+								console.error('reCAPTCHA error: ' + error);
+								setButtonLoading(false);
+								showError('reCAPTCHA verification failed. Please try again.');
+							});
+					});
+				} catch (error) {
+					console.error('Error in reCAPTCHA execution: ' + error);
+					setButtonLoading(false);
+					showError('An error occurred during form submission. Please try again.');
+				}
+			});
+
+			// Add loading indicator
+			function setButtonLoading(loading) {
+				const button = document.getElementById('registerButton');
+				if (loading) {
+					button.disabled = true;
+					button.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...';
+				} else {
+					button.disabled = false;
+					button.innerHTML = 'Register';
+				}
+			}
+
+			// Add error message display
+			function showError(message) {
+				const errorDiv = document.createElement('div');
+				errorDiv.className = 'alert alert-danger mt-3';
+				errorDiv.role = 'alert';
+				errorDiv.textContent = message;
+				$('#registerForm').prepend(errorDiv);
+				setTimeout(() => errorDiv.remove(), 5000); // Remove after 5 seconds
+			}
+		});
+	</script>
 }
