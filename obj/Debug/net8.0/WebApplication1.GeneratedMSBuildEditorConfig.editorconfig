@@ -9,75 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplication1
 build_property.RootNamespace = WebApplication1
-build_property.ProjectDir = C:\Users\Andric\Downloads\AS_Assignment\WebApplication1\
+build_property.ProjectDir = c:\Users\Andric\Downloads\AS_Assignment\WebApplication1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Andric\Downloads\AS_Assignment\WebApplication1
+build_property.MSBuildProjectDirectory = c:\Users\Andric\Downloads\AS_Assignment\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/ChangePassword.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/ConfirmEmail.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZmlybUVtYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/EmailConfirmed.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/EmailConfirmed.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1haWxDb25maXJtZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Error.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/ForgotPassword.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ290UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/ForgotPasswordConfirmation.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ290UGFzc3dvcmRDb25maXJtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Index.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Login.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Privacy.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Register.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/RegisterConfirmation.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJDb25maXJtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/ResetPassword.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/_ViewImports.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/_ViewStart.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Shared/_Layout.cshtml]
+[c:/Users/Andric/Downloads/AS_Assignment/WebApplication1/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-g6ltozs93r
