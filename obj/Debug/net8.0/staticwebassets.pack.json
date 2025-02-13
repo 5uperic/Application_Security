@@ -1,0 +1,381 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\js\\sessionTimeout.js",
+      "PackagePath": "staticwebassets\\js\\sessionTimeout.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\081e8419-3626-447d-ab32-c4dd7d8c8008.jpg",
+      "PackagePath": "staticwebassets\\photos\\081e8419-3626-447d-ab32-c4dd7d8c8008.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\0cdb931a-1af7-4e17-aacc-ab21d2e1046c.jpg",
+      "PackagePath": "staticwebassets\\photos\\0cdb931a-1af7-4e17-aacc-ab21d2e1046c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\10c4158a-b829-4e47-aeb6-d2a1186a1a52.jpg",
+      "PackagePath": "staticwebassets\\photos\\10c4158a-b829-4e47-aeb6-d2a1186a1a52.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\15940190-f119-4f20-97a6-c7400c9428f2.jpg",
+      "PackagePath": "staticwebassets\\photos\\15940190-f119-4f20-97a6-c7400c9428f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\169ad0ab-f81e-425f-adb2-0f1adb2c1753.jpg",
+      "PackagePath": "staticwebassets\\photos\\169ad0ab-f81e-425f-adb2-0f1adb2c1753.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\16c628d7-b0f5-42f3-8897-266103c7ebfc.jpg",
+      "PackagePath": "staticwebassets\\photos\\16c628d7-b0f5-42f3-8897-266103c7ebfc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\291070c4-8d66-4ebd-934c-a3b58c9a6807.jpg",
+      "PackagePath": "staticwebassets\\photos\\291070c4-8d66-4ebd-934c-a3b58c9a6807.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\37d34c9a-14d8-488c-90b3-19d1712bc098.jpg",
+      "PackagePath": "staticwebassets\\photos\\37d34c9a-14d8-488c-90b3-19d1712bc098.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\3b8bbf0b-9ab0-4909-9b33-7b9a6df95ce2.jpg",
+      "PackagePath": "staticwebassets\\photos\\3b8bbf0b-9ab0-4909-9b33-7b9a6df95ce2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\4162847e-c009-4324-a761-6abfdb10d4b3.jpg",
+      "PackagePath": "staticwebassets\\photos\\4162847e-c009-4324-a761-6abfdb10d4b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\5b7c6284-44d9-4ec6-8898-80c9969c9889.jpg",
+      "PackagePath": "staticwebassets\\photos\\5b7c6284-44d9-4ec6-8898-80c9969c9889.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\77f3abf9-74a6-4985-a86e-d56540d0f254.jpg",
+      "PackagePath": "staticwebassets\\photos\\77f3abf9-74a6-4985-a86e-d56540d0f254.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\7ad1922d-fb06-4d93-829d-0958ddd3b961.jpg",
+      "PackagePath": "staticwebassets\\photos\\7ad1922d-fb06-4d93-829d-0958ddd3b961.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\88946dd5-cbad-4302-9879-bec2058783f5.jpg",
+      "PackagePath": "staticwebassets\\photos\\88946dd5-cbad-4302-9879-bec2058783f5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\9081660e-78b2-4321-9a47-c902287fcd86.jpg",
+      "PackagePath": "staticwebassets\\photos\\9081660e-78b2-4321-9a47-c902287fcd86.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\9ac72fa6-d25a-42ec-9b3a-7293c3fb2df3.jpg",
+      "PackagePath": "staticwebassets\\photos\\9ac72fa6-d25a-42ec-9b3a-7293c3fb2df3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\a420a916-371c-4517-8478-4ebb6ea72749.jpg",
+      "PackagePath": "staticwebassets\\photos\\a420a916-371c-4517-8478-4ebb6ea72749.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\a43555f5-c598-4a37-9c32-8d4a48604ed4.jpg",
+      "PackagePath": "staticwebassets\\photos\\a43555f5-c598-4a37-9c32-8d4a48604ed4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\a7cad16a-ad27-40a5-8757-6e66dea827b3.jpg",
+      "PackagePath": "staticwebassets\\photos\\a7cad16a-ad27-40a5-8757-6e66dea827b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\b0e26a00-e714-4e45-80b7-382a15204dcc.jpg",
+      "PackagePath": "staticwebassets\\photos\\b0e26a00-e714-4e45-80b7-382a15204dcc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\b1883de8-87b6-4fea-a960-59cdd7bc8406.jpg",
+      "PackagePath": "staticwebassets\\photos\\b1883de8-87b6-4fea-a960-59cdd7bc8406.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\b2bc839f-b61b-4f32-9a71-5f7ee7df052b.jpg",
+      "PackagePath": "staticwebassets\\photos\\b2bc839f-b61b-4f32-9a71-5f7ee7df052b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\c12aae33-65a8-4f46-9c4c-d16d487f2a3c.jpg",
+      "PackagePath": "staticwebassets\\photos\\c12aae33-65a8-4f46-9c4c-d16d487f2a3c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\c5758e81-99c7-4333-be64-7422f88d24a6.jpg",
+      "PackagePath": "staticwebassets\\photos\\c5758e81-99c7-4333-be64-7422f88d24a6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\c5ebfa82-8a19-4457-b65f-124b7f5525d1.jpg",
+      "PackagePath": "staticwebassets\\photos\\c5ebfa82-8a19-4457-b65f-124b7f5525d1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\ced358f0-e465-4d69-b38d-80b3dff94758.jpg",
+      "PackagePath": "staticwebassets\\photos\\ced358f0-e465-4d69-b38d-80b3dff94758.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\e20ba6a3-c827-444b-9ef7-019ac9422dd4.jpg",
+      "PackagePath": "staticwebassets\\photos\\e20ba6a3-c827-444b-9ef7-019ac9422dd4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Andric\\Downloads\\AS_Assignment\\WebApplication1\\wwwroot\\photos\\efbb020d-fe6a-4cc2-8228-89d9ade3724c.jpg",
+      "PackagePath": "staticwebassets\\photos\\efbb020d-fe6a-4cc2-8228-89d9ade3724c.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebApplication1.props",
+      "PackagePath": "build\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication1.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebApplication1.props",
+      "PackagePath": "buildTransitive\\WebApplication1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

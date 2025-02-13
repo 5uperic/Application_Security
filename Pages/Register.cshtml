@@ -1,0 +1,190 @@
+﻿@page
+@model WebApplication1.Pages.RegisterModel
+@{
+}
+
+<!-- Add this in the head section or before the closing body tag -->
+@section Head {
+	<script src="https://www.google.com/recaptcha/api.js?render=@Model.RecaptchaSiteKey"></script>
+}
+
+<div class="container mt-5">
+
+	<div class="row justify-content-center align-items-center">
+
+		<div class="col-sm-12 col-md-12 col-lg-4">
+			<h1 class="mb-3">Register </h1>
+
+			<form method="post" enctype="multipart/form-data" id="registerForm">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="RModel.FullName">Full Name</label>
+					<input type="text" asp-for="RModel.FullName" class="form-control" required />
+					<span asp-validation-for="RModel.FullName" class="text-danger"></span>
+				</div>
+
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="RModel.Email">Email Address</label>
+					<input type="Text" asp-for="RModel.Email" class="form-control" />
+					<span asp-validaton-for="RModel.Email" class="text-danger"></span>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="RModel.Password">Password</label>
+					<input type="password" asp-for="RModel.Password" class="form-control" minlength="12" required />
+					<span asp-validation-for="RModel.Password" class="text-danger"></span>
+				</div>
+
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="RModel.ConfirmPassword">Confirm Password</label>
+					<input type="Text" asp-for="RModel.ConfirmPassword" class="form-control" />
+					<span asp-validaton-for="RModel.ConfirmPassword" class="text-danger"></span>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="RModel.PhoneNumber">Phone Number</label>
+					<input type="tel" asp-for="RModel.PhoneNumber" class="form-control" required />
+					<span asp-validation-for="RModel.PhoneNumber" class="text-danger"></span>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="RModel.CreditCardNumber">Credit Card Number</label>
+					<input type="text" asp-for="RModel.CreditCardNumber" class="form-control" required />
+					<span asp-validation-for="RModel.CreditCardNumber" class="text-danger"></span>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="RModel.Gender">Gender</label>
+					<select asp-for="RModel.Gender" class="form-control" required>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Other">Other</option>
+					</select>
+					<span asp-validation-for="RModel.Gender" class="text-danger"></span>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="RModel.DeliveryAddress">Delivery Address</label>
+					<input type="text" asp-for="RModel.DeliveryAddress" class="form-control" required />
+					<span asp-validation-for="RModel.DeliveryAddress" class="text-danger"></span>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="RModel.Photo">Upload Photo (JPG only)</label>
+					<input type="file" asp-for="RModel.Photo" accept=".jpg" class="form-control" required />
+					<span asp-validation-for="RModel.Photo" class="text-danger"></span>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" asp-for="RModel.AboutMe">About Me</label>
+					<textarea asp-for="RModel.AboutMe" class="form-control" required></textarea>
+					<span asp-validation-for="RModel.AboutMe" class="text-danger"></span>
+				</div>
+
+				<!-- Add a hidden input for the reCAPTCHA token -->
+ type="hidden" name="g-recaptcha-response" id="g-recaptcha-response" />				<input
+
+				<div class="mb-3">
+					<button type="submit" id="registerButton" class="btn btn-primary">Register</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Confirmation Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="confirmationModalLabel">Registration Successful</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Please check your email and confirm your account by clicking the confirmation link we have sent.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            console.log('Page loaded. reCAPTCHA site key: @Model.RecaptchaSiteKey');
+            
+            // Show confirmation modal if needed
+            if (@Model.ShowConfirmationModal.ToString().ToLower()) {
+                $('#confirmationModal').modal('show');
+            }
+            
+            // Add loading indicator
+            function setButtonLoading(loading) {
+                const button = document.getElementById('registerButton');
+                if (loading) {
+                    button.disabled = true;
+                    button.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...';
+                } else {
+                    button.disabled = false;
+                    button.innerHTML = 'Register';
+                }
+            }
+
+            // Add error message display
+            function showError(message) {
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'alert alert-danger mt-3';
+                errorDiv.role = 'alert';
+                errorDiv.textContent = message;
+                $('#registerForm').prepend(errorDiv);
+                setTimeout(() => errorDiv.remove(), 5000); // Remove after 5 seconds
+            }
+            
+            $('#registerForm').on('submit', function(e) {
+                e.preventDefault();
+                console.log('Form submission started');
+                
+                // Clear any existing error messages
+                $('.alert-danger').remove();
+                
+                // Set button to loading state
+                setButtonLoading(true);
+                
+                console.log('Executing reCAPTCHA verification...');
+                
+                try {
+                    grecaptcha.ready(function() {
+                        console.log('reCAPTCHA is ready');
+                        grecaptcha.execute('@Model.RecaptchaSiteKey', {action: 'register'})
+                            .then(function(token) {
+                                console.log('Received reCAPTCHA token');
+                                document.getElementById('g-recaptcha-response').value = token;
+                                console.log('Token set in form');
+                        
+                                $('#registerForm')[0].submit();
+                            })
+                            .catch(function(error) {
+                                console.error('reCAPTCHA error: ' + error);
+                                setButtonLoading(false);
+                                showError('reCAPTCHA verification failed. Please try again.');
+                            });
+                    });
+                } catch (error) {
+                    console.error('Error in reCAPTCHA execution: ' + error);
+                    setButtonLoading(false);
+                    showError('An error occurred during form submission. Please try again.');
+                }
+            });
+        });
+    </script>
+}

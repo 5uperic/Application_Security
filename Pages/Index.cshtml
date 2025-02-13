@@ -1,0 +1,28 @@
+﻿@page
+@model WebApplication1.Pages.IndexModel
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+<h1>User Profile</h1>
+
+<div>
+    <p><strong>Full Name:</strong> @Model.CurrentUser.FullName</p>
+    <p><strong>Email:</strong> @Model.CurrentUser.Email</p>
+    <p><strong>Phone:</strong> @Model.CurrentUser.PhoneNumber</p>
+    <p><strong>Gender:</strong> @Model.CurrentUser.Gender</p>
+    <p><strong>Delivery Address:</strong> @Model.CurrentUser.DeliveryAddress</p>
+    <p><strong>About Me:</strong> @Model.CurrentUser.AboutMe</p>
+    <!-- Displaying the credit card number is sensitive. If you really need to display it, consider masking it. -->
+    <p><strong>Credit Card (Encrypted):</strong> @Model.CurrentUser.CreditCardNumber</p>
+    <p><strong>Credit Card (Encrypted):</strong> @Model.DecryptedCreditCard</p>
+    <p><strong>Photo Path:</strong> @Model.CurrentUser.PhotoPath</p>
+    <p><strong>Password Changed Date:</strong> @Model.CurrentUser.PasswordChangedDate?.ToString("g")</p>
+    <p><strong>Last Login:</strong> @Model.CurrentUser.LastLogin?.ToString("g")</p>
+</div>
+
+@if (!string.IsNullOrEmpty(Model.CurrentUser.PhotoPath))
+{
+    <!-- Display the user's photo using an <img> tag. Adjust the path as needed. -->
+    <img src="~/photos/@System.IO.Path.GetFileName(Model.CurrentUser.PhotoPath)" alt="User Photo" style="max-width: 200px;" />
+}
