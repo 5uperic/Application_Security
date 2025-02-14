@@ -50,3 +50,79 @@ jobs:
       - name: Upload CodeQL Database for Debugging (Optional)
         if: failure()
         run: tar -czf codeql-database.tar.gz /home/runner/work/_temp/codeql_databases/csharp
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.403'  # Adjust to match your required .NET version
+
+      - name: Restore Dependencies
+        run: dotnet restore WebApplication1.sln
+
+      - name: Build Project
+        run: dotnet build WebApplication1.sln --configuration Release --no-restore
+
+      - name: Verify Build Output
+        run: |
+          if [ ! -f ./WebApplication1/bin/Release/net8.0/WebApplication1.dll ]; then
+            echo "Build output not found. Ensure the build step succeeded.";
+            exit 1;
+          fi
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: csharp
+          paths: WebApplication1/  # Explicitly specify the path to your C# project
+          tools: latest
+          verbose: true
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          verbose: true
+
+      - name: Upload CodeQL Database for Debugging (Optional)
+        if: failure()
+        run: tar -czf codeql-database.tar.gz /home/runner/work/_temp/codeql_databases/csharp
+
+  system-test:
+    name: System Test
+    runs-on: ubuntu-latest
+    needs: analyze  # Ensure this job runs after the CodeQL analysis
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.403'  # Adjust to match your required .NET version
+
+      - name: Restore Dependencies
+        run: dotnet restore WebApplication1.sln
+
+      - name: Build Project
+        run: dotnet build WebApplication1.sln --configuration Release --no-restore
+
+      - name: Start Application
+        run: dotnet run --project WebApplication1 --no-build --configuration Release &
+        env:
+          ASPNETCORE_ENVIRONMENT: Development  # Set the environment if needed
+        working-directory: ./WebApplication1
+
+      - name: Wait for Application to Start
+        run: sleep 10  # Wait for the application to start (adjust as needed)
+
+      - name: Run System Tests
+        run: dotnet test WebApplication1.Tests --configuration Release --no-build
+        env:
+          TEST_ENVIRONMENT: http://localhost:5282  # Replace with your application's URL

@@ -7,7 +7,7 @@ namespace WebApplication1.Helpers
 {
     public class EmailSender
     {
-        private readonly string apiKey = "SendgridApi";  // Replace with your SendGrid API key
+        private readonly string apiKey = "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";  // Replace with your SendGrid API key
 
         public async Task SendEmailAsync(string email, string subject, string message)
         {
