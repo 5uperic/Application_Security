@@ -19,7 +19,7 @@ jobs:
         with:
           dotnet-version: '8.0.403'  # or whichever .NET version you need
       - name: Build
-        run: dotnet build WebApplication1/WebApplication1.sln --configuration Release
+        run: dotnet build WebApplication1.sln --configuration Release
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
