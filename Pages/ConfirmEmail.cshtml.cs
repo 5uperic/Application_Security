@@ -3,13 +3,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Threading.Tasks;
 using WebApplication1.Model;
-using System.Web;  // Add this if using HttpUtility (Install System.Web.HttpUtility if necessary)
+using System.Web;
+using System.ComponentModel.DataAnnotations;  // Add this if using HttpUtility (Install System.Web.HttpUtility if necessary)
 
 namespace WebApplication1.Pages
 {
     public class ConfirmEmailModel : PageModel
     {
         private readonly UserManager<ApplicationUser> _userManager;
+        
+        [Required]
         public string Message { get; set; }
 
         public ConfirmEmailModel(UserManager<ApplicationUser> userManager)

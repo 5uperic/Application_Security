@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,9 +12,11 @@ namespace WebApplication1.Pages
     public class ChangePasswordModel : PageModel
     {
         [BindProperty]
+        [Required]
         public string CurrentPassword { get; set; }
 
         [BindProperty]
+        [Required]
         public string NewPassword { get; set; }
 
         private readonly UserManager<ApplicationUser> userManager;

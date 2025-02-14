@@ -5,6 +5,7 @@ using WebApplication1.Model;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using WebApplication1.Helpers;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Pages
 {
@@ -21,10 +22,13 @@ namespace WebApplication1.Pages
         }
 
         // This property will hold the current user's details
+        [Required]
         public ApplicationUser CurrentUser { get; set; }
 
          // Properties to hold both encrypted and decrypted credit card values
+         [Required]
         public string EncryptedCreditCard { get; set; }
+        [Required]
         public string DecryptedCreditCard { get; set; }
 
         public async Task<IActionResult> OnGetAsync()

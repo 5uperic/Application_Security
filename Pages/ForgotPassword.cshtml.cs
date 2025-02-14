@@ -3,12 +3,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using WebApplication1.Model;
 using WebApplication1.Helpers;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Pages
 {
     public class ForgotPasswordModel : PageModel
     {
         [BindProperty]
+        [Required]
         public string Email { get; set; }
 
         private readonly UserManager<ApplicationUser> userManager;
