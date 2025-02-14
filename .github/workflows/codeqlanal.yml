@@ -6,31 +6,47 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '0 0 * * 0'  # Runs weekly at midnight on Sunday
 
 jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
       - name: Set up .NET
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '8.0.403'  # or whichever .NET version you need
+          dotnet-version: '8.0.403'  # Adjust to match your required .NET version
 
-      - name: Restore dependencies
+      - name: Restore Dependencies
         run: dotnet restore WebApplication1.sln
 
-      - name: Build
+      - name: Build Project
         run: dotnet build WebApplication1.sln --configuration Release --no-restore
+
+      - name: Verify Build Output
+        run: |
+          if [ ! -f ./WebApplication1/bin/Release/net8.0/WebApplication1.dll ]; then
+            echo "Build output not found. Ensure the build step succeeded.";
+            exit 1;
+          fi
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
           languages: csharp
-          tools: latest  # Use the latest version of the CodeQL CLI
+          paths: WebApplication1/  # Explicitly specify the path to your C# project
+          tools: latest
+          verbose: true
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
+        with:
+          verbose: true
+
+      - name: Upload CodeQL Database for Debugging (Optional)
+        if: failure()
+        run: tar -czf codeql-database.tar.gz /home/runner/work/_temp/codeql_databases/csharp
